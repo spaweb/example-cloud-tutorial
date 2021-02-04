@@ -36,8 +36,8 @@ View image search results
 
 *** Keywords ***
 Screenshot first result
-    Capture Element Screenshot    css:div[data-ri="0"]    result.png
-    Add Work Item File    result.png
+    Capture Element Screenshot    css:div[data-ri="0"]    ${OUTPUT_DIR}/result.png
+    Add Work Item File    ${OUTPUT_DIR}/result.png
     Save Work Item
 
 *** Tasks ***
