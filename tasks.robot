@@ -5,7 +5,7 @@
 
 *** Settings ***
 Documentation     Executes Google image search and stores the first result image.
-Library           RPA.Browser
+Library           RPA.Browser.Selenium
 Library           RPA.Robocloud.Items
 
 *** Variables ***
@@ -14,9 +14,9 @@ ${SEARCH_TERM}    cute cat picture
 
 *** Keywords ***
 Accept Google Consent
-    Select Frame     //iframe[contains(@src, "https://consent.google.com")]
+    Select Frame    //iframe[contains(@src, "https://consent.google.com")]
     Click Element    id:introAgreeButton
-    [Teardown]       Unselect frame
+    [Teardown]    Unselect frame
 
 *** Keywords ***
 Open Google search page
