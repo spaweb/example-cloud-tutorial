@@ -14,9 +14,7 @@ ${SEARCH_TERM}    cute cat picture
 
 *** Keywords ***
 Accept Google Consent
-    Select Frame    //iframe[contains(@src, "https://consent.google.com")]
-    Click Element    id:introAgreeButton
-    [Teardown]    Unselect frame
+    Click Element    xpath://button/div[contains(text(), 'I agree')]
 
 *** Keywords ***
 Open Google search page
