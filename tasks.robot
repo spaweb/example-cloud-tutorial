@@ -6,7 +6,7 @@
 *** Settings ***
 Documentation     Executes Google image search and stores the first result image.
 Library           RPA.Browser.Selenium
-Library           RPA.Robocloud.Items
+Library           RPA.Robocorp.WorkItems
 
 *** Variables ***
 ${GOOGLE_URL}     https://google.com/?hl=en
